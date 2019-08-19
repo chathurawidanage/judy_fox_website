@@ -1,0 +1,141 @@
+.fancy {
+  line-height: 0.5;
+  text-align: center; }
+
+.fancy span {
+  display: inline-block;
+  position: relative; }
+
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #033AC5;
+  border-top: 1px solid #033AC5;
+  top: 0;
+  width: 600px; }
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px; }
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px; }
+
+@font-face {
+  font-family: BlackJack;
+  src: url("fonts/blackjack.otf") format("opentype"); }
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.navbar .navbar-nav {
+  text-align: center; }
+.navbar .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px; }
+.navbar .nav-item {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase; }
+
+.top-banner {
+  background-image: url("img/art-big-data-blur-373543.jpg");
+  text-align: center;
+  position: relative;
+  height: 250px;
+  border-bottom: 8px solid #033AC5; }
+  .top-banner .top-banner-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.6); }
+  .top-banner .top-banner-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+    .top-banner .top-banner-content h1 {
+      font-family: "BlackJack", sans-serif;
+      font-size: 80px; }
+    .top-banner .top-banner-content p {
+      font-family: 'Lexend Deca', sans-serif; }
+
+.profile {
+  padding-top: 40px; }
+  .profile .profile-image-wrapper {
+    position: relative;
+    height: 350px;
+    width: 100%; }
+    .profile .profile-image-wrapper .profile-image {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+      height: 350px;
+      background-image: url("img/Judy_InvitedTalk.jpg");
+      background-size: cover;
+      border-radius: 500px; }
+  .profile .profile-data {
+    padding-top: 10px; }
+  .profile .profile-news .news-date {
+    color: #033AC5;
+    font-weight: bold;
+    margin-bottom: 0 !important; }
+
+.research .research-title {
+  text-align: center;
+  width: 100%; }
+.research .research-cat-buttons {
+  padding-top: 10px;
+  padding-bottom: 20px; }
+  .research .research-cat-buttons button {
+    margin-right: 10px;
+    border-radius: 21.5px;
+    border: solid 1px #c4c4c4;
+    background: white;
+    padding: 0 10px 0 10px;
+    color: #c4c4c4; }
+    .research .research-cat-buttons button.selected {
+      color: #2d496e;
+      border: solid 1px #2d496e; }
+
+.research-edu {
+  background-color: #d8d8d8;
+  margin-top: 20px; }
+  .research-edu .research-title {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: #5e6a79; }
+
+.research-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px; }
+  .research-cards .research-card-header {
+    background-image: url("https://wallpaperaccess.com/full/629557.jpg");
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+    .research-cards .research-card-header h4 {
+      position: absolute;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      bottom: 10px;
+      left: 10px; }
+  .research-cards .research-card-body {
+    padding: 10px;
+    border: solid 1px #c4c4c4;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: white; }
+
+/*# sourceMappingURL=style.css.map */
