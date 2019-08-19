@@ -30,14 +30,16 @@
 body {
   font-family: 'Source Sans Pro', sans-serif; }
 
-.navbar .navbar-nav {
-  text-align: center; }
-.navbar .navbar-brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px; }
-.navbar .nav-item {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase; }
+.navbar {
+  background-color: #f2f2f2 !important; }
+  .navbar .navbar-nav {
+    text-align: center; }
+  .navbar .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; }
+  .navbar .nav-item {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase; }
 
 .top-banner {
   background-image: url("img/art-big-data-blur-373543.jpg");
@@ -151,5 +153,27 @@ h3 {
       .piano-section .piano-section-description-wrapper .piano-section-description h5 {
         border-left: 3px solid #2d496e;
         padding-left: 10px; }
+
+.footer {
+  background-color: #2d496e;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  color: white; }
+  .footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+    .footer .footer-content h5 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px; }
+    .footer .footer-content h6 {
+      line-height: 36px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .footer .footer-content p {
+      font-style: italic;
+      margin-bottom: 2px; }
+  .footer .copyright-txt {
+    text-align: center;
+    font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
