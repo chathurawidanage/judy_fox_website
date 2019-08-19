@@ -196,6 +196,18 @@ h3 {
   padding-bottom: 5px;
   color: white;
 
+  button {
+    margin-top: 10px;
+    border-radius: 2px;
+    border: solid 1px #ffffff;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0px 5px 0px;
+  }
+
   .footer-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
