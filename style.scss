@@ -1,0 +1,167 @@
+@import "text_lines";
+@import "colors";
+
+@font-face {
+  font-family: BlackJack;
+  src: url("fonts/blackjack.otf") format("opentype");
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+  }
+
+  .nav-item {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+
+.top-banner {
+  background-image: url("img/art-big-data-blur-373543.jpg");
+  text-align: center;
+  position: relative;
+  height: 250px;
+  border-bottom: 8px solid $dark_blue;
+
+  .top-banner-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .top-banner-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    h1 {
+      font-family: "BlackJack", sans-serif;
+      font-size: 80px;
+    }
+
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+    }
+  }
+}
+
+.profile {
+  padding-top: 40px;
+
+  .profile-image-wrapper {
+    position: relative;
+    height: 350px;
+    width: 100%;
+
+    .profile-image {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+      height: 350px;
+      background-image: url("img/Judy_InvitedTalk.jpg");
+      background-size: cover;
+      border-radius: 500px;
+    }
+  }
+
+
+  .profile-data {
+    padding-top: 10px;
+  }
+
+  .profile-news {
+    .news-date {
+      color: $dark_blue;
+      font-weight: bold;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.research {
+  .research-title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .research-cat-buttons {
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    button {
+      margin-right: 10px;
+      border-radius: 21.5px;
+      border: solid 1px #c4c4c4;
+      background: white;
+      padding: 0 10px 0 10px;
+      color: #c4c4c4;
+
+      &.selected {
+        color: #2d496e;
+        border: solid 1px #2d496e;
+      }
+    }
+  }
+}
+
+.research-edu {
+  background-color: #d8d8d8;
+  margin-top: 20px;
+  .research-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: #5e6a79;
+}
+
+.research-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+
+  .research-card-header {
+    background-image: url("https://wallpaperaccess.com/full/629557.jpg");
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    h4 {
+      position: absolute;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+
+  .research-card-body {
+    padding: 10px;
+    border: solid 1px #c4c4c4;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: white;
+  }
+}
