@@ -12,6 +12,7 @@ body {
 
 .navbar {
   background-color: #f2f2f2 !important;
+  margin-bottom: 10px;
 
   .navbar-nav {
     text-align: center;
@@ -234,3 +235,48 @@ h3 {
     font-size: 14px;
   }
 }
+
+/*LOADER*/
+
+
+
+/*LOADER*/
+
+
+/*PUBLICATIONS PAGES*/
+.pub-section {
+  h2 {
+    font-family: "Playfair Display", sans-serif;
+  }
+}
+
+.pub-menu {
+  h6 {
+    margin-left: -15px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 10px !important;
+  }
+
+  .pub-menu-item {
+    margin-bottom: 5px;
+
+    &.active {
+      font-weight: bold;
+    }
+
+    img {
+      margin-right: 20px;
+      width: 22px;
+      height: 22px;
+    }
+
+
+    color: black;
+
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+/*END OF PUBLICATIONS PAGES*/

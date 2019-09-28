@@ -31,7 +31,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif; }
 
 .navbar {
-  background-color: #f2f2f2 !important; }
+  background-color: #f2f2f2 !important;
+  margin-bottom: 10px; }
   .navbar .navbar-nav {
     text-align: center; }
   .navbar .navbar-brand {
@@ -185,5 +186,29 @@ h3 {
   .footer .copyright-txt {
     text-align: center;
     font-size: 14px; }
+
+/*LOADER*/
+/*LOADER*/
+/*PUBLICATIONS PAGES*/
+.pub-section h2 {
+  font-family: "Playfair Display", sans-serif; }
+
+.pub-menu h6 {
+  margin-left: -15px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 10px !important; }
+.pub-menu .pub-menu-item {
+  margin-bottom: 5px;
+  color: black; }
+  .pub-menu .pub-menu-item.active {
+    font-weight: bold; }
+  .pub-menu .pub-menu-item img {
+    margin-right: 20px;
+    width: 22px;
+    height: 22px; }
+  .pub-menu .pub-menu-item:visited {
+    color: black; }
+
+/*END OF PUBLICATIONS PAGES*/
 
 /*# sourceMappingURL=style.css.map */
