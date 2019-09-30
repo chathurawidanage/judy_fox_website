@@ -22,21 +22,33 @@
     <div class="row">
         <div class="col-sm-4 pub-menu">
             <h6 class="row">Publication Types</h6>
-            <a href="#" class="row pub-menu-item" onclick="showSection(this,'pub-books')"
+            <a href="#books" class="row pub-menu-item" onclick="showSection(this,'pub-books')"
                id="pub-menu-item-books">
                 <img src="img/icons/noun-books-709756.svg"/> Books
             </a>
-            <a href="#" class="row pub-menu-item" onclick="showSection(this,'pub-journals')">
+            <a href="#journals" class="row pub-menu-item" onclick="showSection(this,'pub-journals')"
+               id="pub-menu-item-journals">
                 <img src="img/icons/noun-journal-1069823.svg"/> Journals
             </a>
-            <a href="#" class="row pub-menu-item" onclick="showSection(this,'pub-conference')">
+            <a href="#conference" class="row pub-menu-item" onclick="showSection(this,'pub-conference')"
+               id="pub-menu-item-conference">
                 <img src="img/icons/noun-conference-1730652.svg"/> Conference/Workshops
             </a>
-            <a href="#" class="row pub-menu-item" onclick="showSection(this, 'pub-invited-talks')">
+            <a href="#invited-talks" class="row pub-menu-item" onclick="showSection(this, 'pub-invited-talks')"
+               id="pub-menu-item-invited-talks">
                 <img src="img/icons/noun-lecture-1620703.svg"/> Invited Talks
             </a>
-            <a href="publications.html" class="row pub-menu-item">
-                <img src="img/icons/noun-presentation-2174581.svg"/> Presentations
+            <a href="#media" class="row pub-menu-item" onclick="showSection(this, 'pub-media')"
+               id="pub-menu-item-media">
+                <img src="img/icons/noun-presentation-2174581.svg"/> Media Coverage
+            </a>
+            <a href="#software" class="row pub-menu-item" onclick="showSection(this, 'pub-software')"
+               id="pub-menu-item-software">
+                <img src="img/icons/noun-software.svg"/> Software Releases
+            </a>
+            <a href="#other" class="row pub-menu-item" onclick="showSection(this, 'pub-other')"
+               id="pub-menu-item-other">
+                <img src="img/icons/noun-more-1002227.svg"/> Other Publications
             </a>
         </div>
         <div class="col-sm-8">
@@ -639,6 +651,165 @@
                     Computing Workshop). University of Pittsburgh, Pittsburgh, PA. July 30-31, 2009.
                 </p>
             </div>
+
+            <!--MEDIA-->
+            <div id="pub-media" class="pub-section">
+                <h2>Media Coverage</h2>
+                <h5>
+                    Harp, Harp-DAAL, Twister and Twister4Azure are our research projects that support large-scale
+                    iterative computations for HPC and Cloud.
+                </h5>
+                <p>
+                    Harp-DAAL Raises Hadoop Platform to Knights Landing Height, an article on
+                    <a href="https://www.nextplatform.com/2017/08/15/hadoop-platform-rises-knights-landing-heights/">The
+                        Next Platform</a>, August
+                    15, 2017.
+                </p>
+                <p>
+                    Twister4Azure is first project listed in Cloud Research Projects of Microsoft Research, 2012.
+                </p>
+                <p>
+                    Twister is listed in Microsoft’s Research Project <a
+                        href="http://research.microsoft.com/en-us/projects/daytona/">Daytona</a> (released July 2011).
+                </p>
+                <p>
+                    IU "Twister" software improves Google's MapReduce for large-scale scientific data analysis, IU News
+                    Room, Released March 5, 2010.
+                </p>
+            </div>
+
+            <!--SOFTWARE-->
+            <div id="pub-software" class="pub-section">
+                <h2>Software Releases</h2>
+                <p>
+                    Judy Qiu, Bingjing Zhang, Bo Peng, Langshi Chen, Ethan Li, Yiming Zou, Mayank Jaglan, Anchal
+                    Khandelwal, Gowtham A R, Abby Kaufman, <a href="https://dsc-spidal.github.io/Harp/">Harp
+                    tutorial</a> and <a href="https://github.com/DSC-SPIDAL/Harp">code repository</a>, February 2017
+                </p>
+                <p>
+                    Judy Qiu and Bingijing Zhang, <a href="http://salsaproj.indiana.edu/harp/index.html">Harp</a>, 2014
+                </p>
+                <p>
+                    Judy Qiu and Xiaoming Gao, <a href="http://salsaproj.indiana.edu/IndexedHBase/index.html"></a>
+                    IndexedHBase, January 6, 2014
+                </p>
+                <p>
+                    Judy Qiu and Thilina Gunarathne, <a href="http://twister4azure.codeplex.com/">Twister4Azure</a>,
+                    September 15, 2012
+                </p>
+                <p>
+                    Judy Qiu and Jaliya Ekanayake, <a href="http://newsinfo.iu.edu/news/page/normal/13726.html">
+                    Twister" software improves Google's MapReduce for large-scale
+                    scientific data analysis</a>, March 15, 2010
+                </p>
+            </div>
+
+            <!--OTHER-->
+            <div id="pub-other" class="pub-section">
+                <h2>Other Publications</h2>
+                <h3>Magazines</h3>
+                <p>
+                    Judy Qiu, Harp-DAAL for High Performance Big Data Computing, <a
+                        href="https://software.intel.com/sites/default/files/parallel-universe-issue-32.pdf">Intel
+                    Magazine</a>, March 17, 2018.
+                </p>
+                <h3>Editorials</h3>
+                <p>
+                    Judy Qiu, Ian T. Foster, Carole A. Goble, “Editorial for Special Issue for Emerging Computational
+                    Methods for the Life Sciences Workshop 2012”, Journal of Concurrency and Computation: Practice and
+                    Experience 26(6): 1231-1233 (2014).
+                </p>
+                <p>
+                    Judy Qiu, Ian Foster and Ronald Taylor “Editorial for Special Issue for Emerging Computational
+                    Methods for the Life Sciences Workshop 2011”, Journal of Concurrency & Computation: Practice &
+                    Experience 26(4): 851-853, published in February 4, 2013. DOI: 10.1002/cpe.2998.
+                </p>
+                <p>
+                    Judy Qiu, Dennis Gannon, “Editorial for Special issue for data intensive eScience”, Journal of
+                    Distributed and Parallel Databases, August 25, 2012 <a
+                        href="http://link.springer.com/article/10.1007/s10619-012-7107-1/fulltext.html">(online)</a>.
+                </p>
+                <p>
+                    Judy Qiu, Ian Foster and Geoffrey Fox, “Editorial for Special Issue for Emerging Computational
+                    Methods for the Life Sciences Workshop 2010” Journal of Concurrency & Computation: Practice &
+                    Experience, August 23, 2011.
+                </p>
+                <p>
+                    Shujia Zhou, Judy Qiu and Kenneth Hawick, "Editorial for Special Section on Challenges and Solutions
+                    in Multicore and Many-Core Computing", Journal of Concurrency & Computation: Practice & Experience,
+                    published November 9, 2011. DOI: 10.1002/cpe.1861.
+                </p>
+                <h3>Position Papers</h3>
+                <p>
+                    Judy Qiu,” Generalizing MapReduce as a Unified Cloud and HPC Runtime”, position paper in the
+                    proceedings of ACM Petascale Data Analytics Workshop (PDACO'11) at Supercomputing11, December 6,
+                    2011.
+                </p>
+                <p>
+                    Xiaoming Gao, Vaibhav Nachankar and Judy Qiu, “Experimenting Lucene Index on HBase in an HPC
+                    Environment”, position paper in the proceedings of ACM High Performance Computing meets Databases
+                    workshop (HPCDB'11) at SuperComputing 11, December 6, 2011.
+                </p>
+                <h3>Technical Reports</h3>
+                <p>
+                    Bingjing Zhang, Bo Peng, Judy Qiu, Parallelizing Big Data Machine Learning Applications with Dynamic
+                    Model Rotation, Technical report, August 7, 2016
+                </p>
+                <p>
+                    Langshi Chen, Judy Qiu, Accelerating Machine Learning with Model-Centric Approach on Emerging
+                    Architectures, Technical report, June 29, 2016
+                </p>
+                <p>
+                    Tak-Lon Wu, Bingjing Zhang, Clayton Davis, Emilio Ferrara, Sandra Flammini, Filippo Menczer, Judy
+                    Qiu, Scalable Query and Analysis for Social Networks: An Integrated High-Level Dataflow System with
+                    Pig and Harp, technical report, 2015.
+                </p>
+                <p>
+                    Bingjing Zhang, Judy Qiu, Stefan Lee, David Crandall, Large-Scale Image Classification using High
+                    Performance Clustering, technical report, 2014.
+                </p>
+                <p>
+                    Thilina Gunarathne, Judy Qiu, Dennis Gannon, Towards a Collective Layer in the Big Data Stack,
+                    submitted to the 14th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing
+                    conference (CCGrid) 2014.
+                </p>
+                <p>
+                    Judy Qiu and Bingjing Zhang, “Mammoth Data in the Cloud: Clustering Social Images”, technical
+                    report, January 2013.
+                </p>
+                <p>
+                    Bingjing Zhang and Judy Qiu, “Clustering Social Images with MapReduce and High Performance
+                    Collective Communication”, technical report, January 2013.
+                </p>
+                <p>
+                    Xiaoming Gao and Judy Qiu, “Scalable Inverted Indexing on NoSQL Table Storage”, technical report,
+                    January, 2013 R9. Seung-Hee Bae, Judy Qiu, Geoffrey Fox “Visualization of Large High-Dimensional
+                    Data via Interpolation Approach of Multidimensional Scaling” Technical Report, July 14, 2012.
+                </p>
+                <p>
+                    Jonathan Klinginsmith, Judy Qiu “Using Cloud Computing for Scalable, Reproducible Experimentation”,
+                    technical report, August 22, 2012.
+                </p>
+                <p>
+                    Thilina Gunarathne, Xiaoming Gao and Judy Qiu, “Twister4Azure: Data Analytics in the Cloud”,
+                    technical report, December 31, 2011.
+                </p>
+                <p>
+                    Hui Li, Ruan Yang, Yuduo Zhou, Judy Qiu, “Draft Report: DRYADLINQ CTP EVALUATION”, technical report,
+                    December 13, 2011.
+                </p>
+                <p>
+                    Jaliya Ekanayake, Thilina Gunarathne, Judy Qiu, Geoffrey Fox, Scott Beason, Jong Youl Choi, Yang
+                    Ruan, Seung-Hee Bae, Hui Li, “Draft Report: Applicability of DryadLINQ to Scientific Applications”,
+                    technical report, October 16, 2009.
+                </p>
+                <p>
+                    Xiaohong Qiu and Geoffrey Fox “Parallel Data Mining for Medical Informatics”, technical report,
+                    January 13, 2009. R15.Xiaohong Qiu, Geoffrey Fox and Alex Ho, “Analysis of Concurrency and
+                    Coordination Runtime CCR and DSS for Parallel and Distributed Computing”, technical report, January
+                    21, 2007.
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -652,9 +823,10 @@
     }
 
     //initially show books
-    var loc = window.location.hash.replace("#", "pub-");
-    if (loc !== "") {
-        showSection($("#pub-menu-item-books"), loc);
+    var locOriginal = window.location.hash.replace("#", "");
+    var loc = "pub-" + locOriginal;
+    if (locOriginal !== "") {
+        showSection($("#pub-menu-item-" + locOriginal), loc);
     } else {
         showSection($("#pub-menu-item-books"), "pub-books");
     }
