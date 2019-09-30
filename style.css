@@ -187,8 +187,6 @@ h3 {
     text-align: center;
     font-size: 14px; }
 
-/*LOADER*/
-/*LOADER*/
 /*PUBLICATIONS PAGES*/
 .pub-section h2 {
   font-family: "Playfair Display", sans-serif; }
@@ -210,5 +208,33 @@ h3 {
     color: black; }
 
 /*END OF PUBLICATIONS PAGES*/
+/*TEACHING PAGES*/
+.teaching-container h2 {
+  font-family: "Playfair Display", sans-serif !important;
+  font-size: 24px; }
+
+/*END OF TEACHING*/
+/*STUDENTS PAGES*/
+.students-container h2 {
+  font-family: "Playfair Display", sans-serif !important;
+  font-size: 24px; }
+.students-container h3 {
+  font-family: "Playfair Display", sans-serif !important;
+  font-size: 20px; }
+  .students-container h3:not(:first-of-type) {
+    margin-top: 20px; }
+.students-container h5:not(:first-of-type) {
+  margin-top: 20px; }
+.students-container .student-profiles {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+  .students-container .student-profiles .student-profile {
+    text-align: center; }
+  .students-container .student-profiles:last-of-type {
+    margin-bottom: 20px; }
+
+/*END OF STUDENTS PAGES*/
 
 /*# sourceMappingURL=style.css.map */

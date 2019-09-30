@@ -236,13 +236,6 @@ h3 {
   }
 }
 
-/*LOADER*/
-
-
-
-/*LOADER*/
-
-
 /*PUBLICATIONS PAGES*/
 .pub-section {
   h2 {
@@ -280,3 +273,53 @@ h3 {
 }
 
 /*END OF PUBLICATIONS PAGES*/
+
+/*TEACHING PAGES*/
+.teaching-container {
+  h2 {
+    font-family: "Playfair Display", sans-serif !important;
+    font-size: 24px;
+  }
+}
+
+/*END OF TEACHING*/
+
+/*STUDENTS PAGES*/
+.students-container {
+  h2 {
+    font-family: "Playfair Display", sans-serif !important;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-family: "Playfair Display", sans-serif !important;
+    font-size: 20px;
+
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  h5 {
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  .student-profiles {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    .student-profile {
+      text-align: center;
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/*END OF STUDENTS PAGES*/

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Judy Fox</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container students-container">
+    <h2>
+        Student Supervision
+    </h2>
+    <p>
+        She links her research to education with new courses Cloud computing and Distributed Systems and has mentored
+        over 820 graduate and undergraduate students in the School of Informatics and Computing. She has been an advisor
+        to 8 Ph.D. students, two of whom graduated, and served on the research committee of 28 Ph.D. students. She
+        supervised 48 Ph.D. and Master’s students for independent study course. She provided over 80 recommendation or
+        reference letters for student applications of advanced study or career. She is committed to involving students
+        from under-represented communities and in work with Minority Serving Institutions where she has hosted 27 HBCU
+        STEM students in the SALSA laboratory. In addition, she supervised 6 IU undergraduate students for research. She
+        organized the weeklong NCSA Big Data for Science workshop 2010, which was offered to over 300 graduate students
+        from 10 universities across the nation. She received a Google Award to develop a new online course on Cloud
+        Computing that combines Google’s course builder techniques with Cloud platforms as part of the Data Science
+        program at Indiana University.
+    </p>
+
+    <!--TEMPLATE-->
+    <template id="student-template">
+        <div class="card student-profile">
+            <img class="card-img-top" src="$IMG" alt="Card image">
+            <div class="card-body">
+                <h6 class="card-title student-name">$NAME</h6>
+                <p class="card-text student-year">$YEAR</p>
+                <p class="card-text student-special">$YEAR</p>
+            </div>
+        </div>
+    </template>
+    <!--END OF TEMPLATE-->
+
+    <h3>As Advisor of PhD Students</h3>
+    <div class="student-profiles" id="std-advisor">
+    </div>
+
+    <h3>As Advisor of PhD Research Committee</h3>
+    <div class="student-profiles" id="std-rsrc-cmt">
+    </div>
+
+    <h3>PhD, Master’s and undergraduate students Qiu supervised via independent study courses and research
+        internship</h3>
+    <h5>2019</h5>
+    <div class="student-profiles" id="std-sup-2019">
+    </div>
+    <h5>2018</h5>
+    <div class="student-profiles" id="std-sup-2018">
+    </div>
+    <h5>2017</h5>
+    <div class="student-profiles" id="std-sup-2017">
+    </div>
+    <h5>2016</h5>
+    <div class="student-profiles" id="std-sup-2016">
+    </div>
+    <h5>2015</h5>
+    <div class="student-profiles" id="std-sup-2015">
+    </div>
+    <h5>2014</h5>
+    <div class="student-profiles" id="std-sup-2014">
+    </div>
+    <h5>2013</h5>
+    <div class="student-profiles" id="std-sup-2013">
+    </div>
+    <h5>2012</h5>
+    <div class="student-profiles" id="std-sup-2012">
+    </div>
+    <h5>2011</h5>
+    <div class="student-profiles" id="std-sup-2011">
+    </div>
+    <h5>2010</h5>
+    <div class="student-profiles" id="std-sup-2010">
+    </div>
+
+    <h3>27 Undergraduate students Qiu hosted via Indiana University HBCU STEM Summer Scholar Institute</h3>
+    <h5>2013</h5>
+    <div class="student-profiles" id="std-und-sup-2013">
+    </div>
+    <h5>2012</h5>
+    <div class="student-profiles" id="std-und-sup-2012">
+    </div>
+    <h5>2011</h5>
+    <div class="student-profiles" id="std-und-sup-2011">
+    </div>
+    <h5>2010</h5>
+    <div class="student-profiles" id="std-und-sup-2010">
+    </div>
+    <h5>2009</h5>
+    <div class="student-profiles" id="std-und-sup-2009">
+    </div>
+
+    <h3>Recommendation Letters Wrote for Students</h3>
+    <ul>
+        <li>Saliya Ekanayake (Postdoc, Lawrence Berkeley National Lab), 2018</li>
+        <li>Mihai Avram (PhD program of IU, UIUC, Notre Dame, Chicago), 2017</li>
+        <li>Sai Sri Vidya Chitta (Grace Hopper Scholarship), 2017</li>
+        <li>Priyanka Cherukuri (Grace Hopper Scholarship), 2017</li>
+        <li>Prateek Srivastava, (PhD program of Intelligent Systems Engineering, Indiana University, Information Systems
+            at Northeastern University), 2017
+        </li>
+        <li>Brahmendra Sravan Kumar Patibandla, (Data Science for Social Good program hosted by the University of
+            Chicago), 2017
+        </li>
+        <li>Bingjing Zhang (Research Scientist position at etuum Inc.), 2017</li>
+        <li>Yueqi Tan (Electrical and Computer Engineering graduate program at Carnegie Mellon University), 2017</li>
+        <li>Hsi-Yun(Karen) Cheng (Reference letter for Perminant Resident Card), 2017</li>
+        <li>Vandana Kolli (Grace Hopper Scholarship), 2016</li>
+        <li>Shwethambari Surendran (Grace Hopper Scholarship), 2016</li>
+        <li>Akash Ram Gopal (reference check for Mathworks Inc.), 2016</li>
+        <li>Zachary Sullivan (PhD program of Computer Science, IU and University of Oxford, CIS program in University of
+            Oregon), 2015
+        </li>
+        <li>Patrick McChesney (PhD Minor representative of IU Physics Department), 2015</li>
+        <li>Zachary King (MS program of Computer Science, Indiana University, MS program of ECE at IUPUI), 2015</li>
+        <li>Mrinmoy Maity (Summer Fellowship of Data Science for Social Good at University of Chicago, Microsoft
+            Research), 2015
+        </li>
+        <li>Supun Kamburugamuva (Microsoft Research Internship), 2015</li>
+        <li>Seung-Hee Bae (faculty of Western Michigan University), 2015</li>
+        <li>Ryan Chibana (MS program of Computer Science, Georgia Institute of Technology, Purdue University, Indiana
+            University), 2014
+        </li>
+        <li>Andrew Sarkisian (MS program of Computer Science, Indiana University), 2014</li>
+        <li>Qiuwei Shou (MS program of Computer Science, Indiana University), 2014</li>
+        <li>Seung-Hee Bae (academic jobs online, Assistant Professor of University of Maryland-Baltimore County), 2014
+        </li>
+        <li>Jiaan Zeng (Yelp), 2014</li>
+        <li>Bingjing Zhang (Internship at Microsoft), 2014</li>
+        <li>Anesu Chaora (Data Science Program, School of Informatics and Computing, Indiana University), 2014</li>
+        <li>Bina Bhaskar (MBA Program at Texas A&M University and Michigan State University), 2014</li>
+        <li>Xiaoyang Chen (CS PhD program at University of Pittsburgh and University of Utah), 2014</li>
+        <li>Chengzhi Wang (M.S. Administrative Studies at Boston University, MS Information Systems at the University of
+            Washington, Teachers College Columbia University, Engineering Management program at John’s Hopkins
+            University), 2014
+        </li>
+        <li>Ila Jogaikar (IU experience letter for PERM card), 2013</li>
+        <li>Jiaan Zeng (internship at Microsoft), 2013</li>
+        <li>Fei Teng (internship at Microsoft), 2013</li>
+        <li>Adarsh Yoga (CS PhD program at Rice University, Harvard, UC Riverside, University of Pittsburgh, University
+            of Arizona, University of Virginia, Stony Brook University, Rutgers University, University of Rochester,
+            Ohio State University, Indiana University), 2013, 2012, 2011
+        </li>
+        <li>Gordon Moon (CS PhD program at University of Washington, University of Minnesota, University of Maryland,
+            Ohio State University, Boston University, University of Michigan, Yale University, Northwestern University,
+            UC Santa Cruz, Rutgers University), 2013, 2012
+        </li>
+        <li>Hemanth Gokavarapu (reference check for VMware Inc.), 2012</li>
+        <li>Kang Zhao (CS PhD program at University of Washington, Purdue University), 2012</li>
+        <li>Alhanoof Althnian (CS PhD program at University of Southern California, Duke University, Penn State,
+            University of Arizona), 2012
+        </li>
+        <li>Joyce Bevins (REU student applying for MS program at IU), 2012</li>
+        <li>JerNettie Burney (REU student applying for MS program at IU), 2012</li>
+        <li>Seung-Hee Bae (research associate at University of Washington), 2012</li>
+        <li>Stephen Wu (Macau postgraduate scholarship), 2012, 2011, 2010</li>
+        <li>Jong You Choi (postdoc fellowship program CIFP), 2011</li>
+        <li>Jiang Wu (CS PhD program at IU), 2011</li>
+        <li>Xiaoming Gao (internship at Microsoft), 2011</li>
+        <li>Yuan Luo (internship at Microsoft), 2011</li>
+        <li>Santhosh Kumar (internship at IU), 2011</li>
+        <li>Pairoj Rattadilok (internship at IU), 2011</li>
+        <li>Hemanth Gokavarapu (internship at IU), 2011</li>
+        <li>Dhairya Gala (internship at IU), 2011</li>
+        <li>Sonali Karwa (internship at IU), 2011</li>
+        <li>Anand Mukundan (internship at IU), 2011</li>
+    </ul>
+
+</div>
+<script type="text/javascript" src="template.js"></script>
+<script type="text/javascript">
+    var studentsAsAdvisor = [
+        {"name": "Sahil Tyagi"}, {"name": "Selahattin Akkas"}, {"name": "Jiayu Li"}, {"name": "Meng Li  "}, {"name": "Yiming Zou "}, {"name": "Bingjing Zhang (graduated)"}, {"name": "Stephen Wu "}, {"name": "Xiaoming Gao (graduated)"}];
+    var phdResearchCommittee = [
+        {"name": "Udayanga Wickramasinghe", "year": "2018"}, {
+            "name": "Qian Luo",
+            "year": "2018"
+        }, {"name": "Jiang Miao", "year": "2018"}, {
+            "name": "Pulasthi Supun Wickramasinghe",
+            "year": "2017"
+        }, {"name": "Zong Peng", "year": "2017"}, {"name": "Luyi Xing", "year": "2017"}, {
+            "name": "Lei Wang",
+            "year": "2016"
+        }, {"name": "Quan Zhou", "year": "2016"}, {
+            "name": "Jesun Saharia Firoz",
+            "year": "2015 "
+        }, {"name": "Saliya Ekanayake", "year": "2015"}, {"name": "Daniel Kogler", "year": "2015"}, {
+            "name": "Yongan Zhao",
+            "year": "2015"
+        }, {"name": "Andrew Younge", "year": "2014"}, {"name": "Yuan Luo", "year": "2014"}, {
+            "name": "Yangyi Chen",
+            "year": "2014"
+        }, {"name": "Isuru Suriarachchi", "year": "2014"}, {
+            "name": "Milinda Pathirage",
+            "year": "2014"
+        }, {"name": "Miao Zhang", "year": "2013"}, {
+            "name": "Supun Madhushanka Kamburugamuve",
+            "year": "2013 "
+        }, {"name": "Sumayah Alrwais", "year": "2013"}, {
+            "name": "Jerome Mitchell",
+            "year": "2013"
+        }, {"name": "Zhenghua Guo", "year": "2012"}, {"name": "Jiaan Zeng", "year": "2012"}, {
+            "name": "Hui Li",
+            "year": "2012"
+        }, {"name": "Yuan Luo", "year": "2012"}, {"name": "Thilina Gunarathne", "year": "2011"}, {
+            "name": "Tak-Lon Wu",
+            "year": "2011"
+        }, {"name": "Yuan Yang", "year": "2011"}];
+
+    var stdSup2019 = [
+        {"name": "Jiayu Li", "special": "PhD"}, {
+            "name": "Miao Jian",
+            "special": "PhD"
+        }, {"name": "Selahattin Akkas", "special": "PhD"}, {
+            "name": "Sahaj Sigh Maini",
+            "special": "MS"
+        }, {"name": "Yining Wang", "special": "Undergraduate, IU"}, {
+            "name": "La’Andrea Gates",
+            "special": "Undergraduate, Mississippi Valley State University"
+        }, {"name": "TaJuan Beckworth", "special": "Undergraduate, Mississippi Valley State University"}];
+    var stdSup2018 = [
+        {"name": "Sahil Tyagi", "special": "PhD"}, {
+            "name": "Selahattin Akkas",
+            "special": "PhD"
+        }, {"name": "Yining Wang", "special": "undergraduate, IU"}, {
+            "name": "Tiana Deckard",
+            "special": "undergraduate, IU"
+        }, {"name": "Ravi Teja", "special": "undergraduate, IIT"}];
+    var stdSup2017 = [
+        {"name": "Sabra Ossen", "special": "PhD"}, {"name": "Feng Bo", "special": "PhD"}, {
+            "name": "Yiming Zou",
+            "special": "PhD"
+        }, {"name": "Meng Li", "special": "PhD"}, {
+            "name": "Mihai Avram",
+            "special": "MS"
+        }, {"name": "Anchal Khandelwal", "special": "MS"}, {
+            "name": "Gowtham A R",
+            "special": "MS"
+        }, {"name": "Yining Wang", "special": "undergraduate, IU"}, {
+            "name": "Anurag Sharma",
+            "special": "undergraduate, IIT"
+        }, {"name": "Mayank Jindal", "special": "undergraduate, IIT"}, {
+            "name": "Prawal Gangwar",
+            "special": "undergraduate, IIT"
+        }, {"name": "Ravi Teja", "special": "undergraduate, IIT"}, {
+            "name": "Manpreet Gulia",
+            "special": "undergraduate, IIT"
+        }];
+    var stdSup2016 = [
+        {"name": "Yiming Zou", "special": "PhD"}, {
+            "name": "Meng Li",
+            "special": "PhD"
+        }, {"name": "Mayank Jaglan", "special": "MS"}, {"name": "Yining Wang", "special": "undergraduate"}];
+    var stdSup2015 = [
+        {"name": "Mohsen Sayyadiharikandeh", "special": "PhD"}, {
+            "name": "Yiming Zou",
+            "special": "PhD"
+        }, {"name": "Meng Li", "special": "PhD"}, {
+            "name": "Tessa Pilachowski",
+            "special": "PhD"
+        }, {"name": "Rohit Ingle", "special": "MS"}, {"name": "Zhenghao Gu", "special": "MS"}, {
+            "name": "Yining Wang",
+            "special": "undergraduate"
+        }];
+    var stdSup2014 = [
+        {"name": "Tessa Pilachowski", "special": "PhD"}, {
+            "name": "Abhilash Peddy Koppula",
+            "special": "MS"
+        }, {"name": "Zhenghao Gu", "special": "MS"}, {
+            "name": "Tirtha Bhattacharjee",
+            "special": "MS of Virginia Tech"
+        }];
+    var stdSup2013 = [
+        {"name": "Fei Teng", "special": "PhD"}, {"name": "Stephen Wu", "special": "PhD"}, {
+            "name": "Xiaoming Gao",
+            "special": "PhD"
+        }, {"name": "Bingjing Zhang", "special": "PhD"}, {
+            "name": "Supun Madhushanka Kamburugamuve",
+            "special": "PhD"
+        }, {"name": "Pavan Venkatramanachar", "special": "MS"}, {
+            "name": "Clayton Sheets",
+            "special": "undergraduate"
+        }, {"name": "Jake Pusateri", "special": "undergraduate"}, {
+            "name": "Hayley Plageman",
+            "special": "undergraduate"
+        }, {"name": "Steven Kutkoski", "special": "undergraduate"}, {
+            "name": "Fabricio Caixeta Andriani",
+            "special": "undergraduate"
+        }, {"name": "Evan Roth", "special": "undergraduate"}];
+    var stdSup2012 = [
+        {"name": "Jonathan Klinginsmith", "special": "PhD Fei Teng"}, {
+            "name": "Stephen Wu",
+            "special": "PhD"
+        }, {"name": "Xiaoming Gao", "special": "PhD"}, {
+            "name": "Jerome Mitchell",
+            "special": "PhD"
+        }, {"name": "Yuduo Zhou", "special": "PhD"}, {
+            "name": "Nabeel Ahamed Akheel",
+            "special": "MS"
+        }, {"name": "Sandip Nandi", "special": "MS"}, {"name": "Yuan Gao", "special": "MS"}, {
+            "name": "Vincy Joy",
+            "special": "MS"
+        }];
+    var stdSup2011 = [
+        {"name": "Xiaoming Gao", "special": "PhD"}, {"name": "Jerome Mitchell", "special": "PhD"}, {
+            "name": "Yang Ruan",
+            "special": "PhD"
+        }, {"name": "Fei Teng", "special": "PhD"}, {"name": "Tak Lon Wu", "special": "PhD"}, {
+            "name": "Yuduo Zhou",
+            "special": "PhD"
+        }];
+    var stdSup2010 = [
+        {"name": "Madhav Remesh", "special": "MS"}, {
+            "name": "Yogendra Ghatpande",
+            "special": "MS"
+        }, {"name": "Gagan Deep Arora", "special": "MS"}, {
+            "name": "Janhavi Virkar",
+            "special": "MS"
+        }, {"name": "Geming Chen", "special": "MS"}, {
+            "name": "Jeremy Kasting",
+            "special": "undergraduate"
+        }, {"name": "Zachary Adda", "special": "undergraduate"}];
+
+    var stdUndSup2013 = [
+        {"name": "Fabricio Caixeta Andriani "}, {"name": "Evan Roth "}]
+    var stdUndSup2012 = [{"name": "Brandi Smith "}, {"name": "Joseph Jackson "}];
+    var stdUndSup2011 = [
+        {"name": "Chartese Jones"}, {"name": " Franshetta Hibbler"}, {"name": " Michael Austin"}, {"name": " Jean Bevins"}, {"name": " JerNettie Burney"}, {"name": " Robyn Evans"}, {"name": " Joyce Bevins"}, {"name": " Autumn Luke"}, {"name": " Lakesha Wells"}, {"name": " Joseph Jackson"}];
+    var stdUndSup2010 = [
+        {"name": "Michael Austin"}, {"name": " Jean Bevins"}, {"name": " Joyce Bevins"}, {"name": " JerNettie Burney"}, {"name": " Nadirah Cogbill"}, {"name": " Robyn Evans"}, {"name": " Keenan Black"}, {"name": " Constance Williams"}, {"name": " Cornelius Myles"}, {"name": " Cortnie Wright"}];
+    var stdUndSup2009 = [{"name": "Cedric Carter "}, {"name": "Nadia Jones "}, {"name": "Timothy Watson"}];
+
+    function getStudentProfile(studentObj) {
+        var template = $($("#student-template").html());
+        /*IMG*/
+        if (studentObj.img) {
+            template.find("img").attr("src", studentObj.img);
+        } else {
+            template.find("img").attr("src", "img/profile.png");
+        }
+
+        /*NAME*/
+        template.find(".student-name").text(studentObj.name);
+
+        /*YEAR*/
+        if (studentObj.year) {
+            template.find(".student-year").text(studentObj.year);
+        } else {
+            template.find(".student-year").remove();
+        }
+
+        /*SPECIAL*/
+        if (studentObj.special) {
+            template.find(".student-special").text(studentObj.special);
+        } else {
+            template.find(".student-special").remove();
+        }
+
+        return template;
+    }
+
+    studentsAsAdvisor.forEach(function (std) {
+        $("#std-advisor").append(getStudentProfile(std));
+    });
+
+    phdResearchCommittee.forEach(function (std) {
+        $("#std-rsrc-cmt").append(getStudentProfile(std));
+    });
+
+    stdSup2019.forEach(function (std) {
+        $("#std-sup-2019").append(getStudentProfile(std));
+    });
+
+    stdSup2018.forEach(function (std) {
+        $("#std-sup-2018").append(getStudentProfile(std));
+    });
+
+    stdSup2017.forEach(function (std) {
+        $("#std-sup-2017").append(getStudentProfile(std));
+    });
+
+    stdSup2016.forEach(function (std) {
+        $("#std-sup-2016").append(getStudentProfile(std));
+    });
+
+    stdSup2015.forEach(function (std) {
+        $("#std-sup-2015").append(getStudentProfile(std));
+    });
+
+    stdSup2014.forEach(function (std) {
+        $("#std-sup-2014").append(getStudentProfile(std));
+    });
+
+    stdSup2013.forEach(function (std) {
+        $("#std-sup-2013").append(getStudentProfile(std));
+    });
+
+    stdSup2012.forEach(function (std) {
+        $("#std-sup-2012").append(getStudentProfile(std));
+    });
+
+    stdSup2011.forEach(function (std) {
+        $("#std-sup-2011").append(getStudentProfile(std));
+    });
+
+    stdSup2010.forEach(function (std) {
+        $("#std-sup-2010").append(getStudentProfile(std));
+    });
+
+
+    stdUndSup2013.forEach(function (std) {
+        $("#std-und-sup-2013").append(getStudentProfile(std));
+    });
+
+    stdUndSup2012.forEach(function (std) {
+        $("#std-und-sup-2012").append(getStudentProfile(std));
+    });
+    stdUndSup2011.forEach(function (std) {
+        $("#std-und-sup-2011").append(getStudentProfile(std));
+    });
+    stdUndSup2010.forEach(function (std) {
+        $("#std-und-sup-2010").append(getStudentProfile(std));
+    });
+    stdUndSup2009.forEach(function (std) {
+        $("#std-und-sup-2009").append(getStudentProfile(std));
+    });
+
+    /*Processing Functions*/
+    function process(str) {
+        var names = str.split("\n");
+        return JSON.stringify(names.filter(function (value) {
+            return value.trim() !== ""
+        }).map(function (name) {
+            var parts = name.split("(");
+            return {
+                name: parts[0].trim(),
+                special: parts[1].replace(")", "").trim()
+            }
+        }));
+    }
+</script>
+</body>
+</html>
