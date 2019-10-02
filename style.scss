@@ -158,6 +158,8 @@ h3 {
       color: white;
       bottom: 10px;
       left: 10px;
+      text-shadow: 0 0 2px #000;
+      font-size: 16px;
     }
   }
 
@@ -224,9 +226,10 @@ h3 {
       text-transform: uppercase;
     }
 
-    p {
+    p, a {
       font-style: italic;
       margin-bottom: 2px;
+      color: white;
     }
   }
 
@@ -237,7 +240,7 @@ h3 {
 }
 
 /*PUBLICATIONS PAGES*/
-.pub-section {
+.pub-section, .ser-section {
   h2 {
     font-family: "Playfair Display", sans-serif;
   }
@@ -323,3 +326,14 @@ h3 {
 }
 
 /*END OF STUDENTS PAGES*/
+
+
+/*SERVICES PAGES*/
+.ser-section {
+  table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+  }
+}
+
+/*END OF SERVICES PAGES*/

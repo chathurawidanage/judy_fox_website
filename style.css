@@ -133,7 +133,9 @@ h3 {
       font-family: 'Playfair Display', serif;
       color: white;
       bottom: 10px;
-      left: 10px; }
+      left: 10px;
+      text-shadow: 0 0 2px #000;
+      font-size: 16px; }
   .research-cards .research-card-body {
     padding: 10px;
     border: solid 1px #c4c4c4;
@@ -180,15 +182,16 @@ h3 {
       line-height: 36px;
       font-weight: bold;
       text-transform: uppercase; }
-    .footer .footer-content p {
+    .footer .footer-content p, .footer .footer-content a {
       font-style: italic;
-      margin-bottom: 2px; }
+      margin-bottom: 2px;
+      color: white; }
   .footer .copyright-txt {
     text-align: center;
     font-size: 14px; }
 
 /*PUBLICATIONS PAGES*/
-.pub-section h2 {
+.pub-section h2, .ser-section h2 {
   font-family: "Playfair Display", sans-serif; }
 
 .pub-menu h6 {
@@ -236,5 +239,11 @@ h3 {
     margin-bottom: 20px; }
 
 /*END OF STUDENTS PAGES*/
+/*SERVICES PAGES*/
+.ser-section table {
+  border-collapse: separate;
+  border-spacing: 0 5px; }
+
+/*END OF SERVICES PAGES*/
 
 /*# sourceMappingURL=style.css.map */
