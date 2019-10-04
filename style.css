@@ -138,9 +138,12 @@ h3 {
       font-family: 'Playfair Display', serif;
       color: white;
       bottom: 10px;
-      left: 10px;
+      left: 0;
       text-shadow: 0 0 2px #000;
-      font-size: 16px; }
+      font-size: 18px;
+      background: rgba(45, 73, 110, 0.8);
+      padding: 5px;
+      width: 100%; }
   .research-cards .research-card-body {
     padding: 10px;
     border: solid 1px #c4c4c4;
@@ -168,7 +171,7 @@ h3 {
   padding-top: 20px;
   padding-bottom: 5px;
   color: white; }
-  .footer button {
+  .footer button, .footer .btn {
     margin-top: 10px;
     border-radius: 2px;
     border: solid 1px #ffffff;
@@ -177,7 +180,8 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     width: 150px;
-    padding: 5px 0px 5px 0px; }
+    padding: 5px 0px 5px 0px;
+    font-style: normal !important; }
   .footer .footer-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr); }
