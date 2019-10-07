@@ -95,6 +95,15 @@ body {
     padding-left: 10px; }
   .profile .profile-data {
     padding-top: 10px; }
+  .profile .profile-btns .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #2d496e;
+    border-radius: 0; }
+    .profile .profile-btns .btn:first-of-type {
+      margin-right: 20px; }
+    .profile .profile-btns .btn.btn-primary {
+      color: white; }
 
 .news-section {
   background-color: #d8d8d8;
