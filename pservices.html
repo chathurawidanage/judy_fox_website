@@ -550,6 +550,23 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function showSection(elem, sectionId) {
+        $(".ser-section").hide();
+        $(".pub-menu-item").removeClass("active");
+        $("." + sectionId).show();
+        $(elem).addClass("active");
+    }
+
+    //initially show books
+    var locOriginal = window.location.hash.replace("#", "");
+    var loc = "ser-" + locOriginal;
+    if (locOriginal !== "") {
+        showSection($("#pub-menu-item-" + locOriginal), loc);
+    } else {
+        showSection($("#pub-menu-item-university"), "ser-university");
+    }
+</script>
 <script type="text/javascript" src="template.js"></script>
 </body>
 </html>
