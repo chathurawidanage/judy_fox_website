@@ -84,14 +84,28 @@ body {
       width: 350px;
       height: 350px;
       background-image: url("img/Judy_InvitedTalk.jpg");
-      background-size: cover;
-      border-radius: 500px; }
+      background-size: cover; }
+  .profile .profile-bio .profile-tag {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #5e6a79;
+    font-style: italic;
+    font-size: 22px;
+    border-left: 2px solid #2d496e;
+    padding-left: 10px; }
   .profile .profile-data {
     padding-top: 10px; }
-  .profile .profile-news .news-date {
-    color: #033AC5;
+
+.news-section {
+  background-color: #d8d8d8;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .news-section .profile-news .news-date {
+    color: black;
     font-weight: bold;
     margin-bottom: 0 !important; }
+  .news-section .row .col-sm-3 {
+    padding-left: 0; }
 
 .research .research-title {
   text-align: center;
@@ -122,9 +136,9 @@ h3 {
 
 .research-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   margin-bottom: 25px; }
   .research-cards .research-card-header {
     background-image: url("https://wallpaperaccess.com/full/629557.jpg");
@@ -140,8 +154,7 @@ h3 {
       bottom: 10px;
       left: 0;
       text-shadow: 0 0 2px #000;
-      font-size: 18px;
-      background: rgba(45, 73, 110, 0.8);
+      font-size: 20px;
       padding: 5px;
       width: 100%; }
   .research-cards .research-card-body {
