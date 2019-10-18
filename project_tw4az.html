@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Judy Fox</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projects.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="project-header"
+         style="background-image: url('https://wallpaperplay.com/walls/full/3/1/9/42772.jpg')">
+        <h3>Twister4Azure</h3>
+    </div>
+    <div>
+        <p>
+            Twister4Azure is an iterative MapReduce framework for Azure cloud that extends the MapReduce programming
+            model to support data-intensive iterative computations. Twister4Azure enables a wide array of large-scale
+            iterative data mining and data analysis applications to utilize the Azure cloud platform in an easy,
+            efficient, and fault-tolerant manner. Its architecture utilizes the scalable, distributed, and highly
+            available Azure cloud services as the underlying building blocks and employs a decentralized control
+            architecture that avoids single point failures. Twister4Azure takes care of almost all the Azure
+            infrastructure (service failures, load balancing, etc.) and coordination challenges, and frees users from
+            having to deal with the challenges of cloud services. It also implements Map-Collectives high performance
+            communication and computation abstractions, supporting Map-AllGather, Map-AllReduce, MapReduceMergeBroadcast
+            and Map-ReduceScatter patterns. This work was presented at CCGrid in May 2014 and has pioneered many of the
+            Collectives ideas that we are carrying forward on Harp described below.
+        </p>
+        <p>
+            To improve the expressiveness and performance in big data processing, the Harp library is introduced, which
+            provides data abstractions and related communication abstractions and transforms map-reduce programming
+            models into map-collective models. The word “harp” symbolizes the effort to make parallel processes
+            cooperate together through collective communication for efficient data processing, just as strings in a harp
+            can make concordant sound. Harp can integrate with Hadoop 1.2.1 and Hadoop 2.2.0. It supports data
+            abstraction types such as arrays, key-values, and graphs with related collective communication operations on
+            top of each type. Several applications are developed based on Harp framework, including K-means clustering,
+            multi-dimensional scaling and PageRank. Being based on Hadoop, Harp has better sustainability and fault
+            tolerance properties than Twister or Twister4Azure that inspired it.
+        </p>
+        <h4>Journal Papers</h4>
+        <p>
+            Panelist,6th Workshop on Many-Task Computing on Clouds, Grids, and Supercomputers (MTAGS) 2013, November 17
+            2013 at SC13
+        </p>
+        <p>
+            Co-chair, summer workshop on "Algorithms and Cyberinfrastructure for large scale optimization/AI", August 9,
+            2013
+        </p>
+    </div>
+</div>
+<script type="text/javascript" src="template.js"></script>
+</body>
+</html>
